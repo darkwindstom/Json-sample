@@ -24,21 +24,34 @@ public class CreateJson {
 		
 		JsonArray subjectja = new JsonArray();
 		
-		JsonObject array1 = new JsonObject();
-		array1.addProperty("bookname", "name1");
-		array1.addProperty("author", "author1");	
+		JsonObject jajo = null;
 		
-		JsonObject array2 = new JsonObject();
-		array2.addProperty("bookname", "name1");
-		array2.addProperty("author", "author1");
-				
-		subjectja.add(array1);
-		subjectja.add(array2);
+		for(int i = 1; i<5; i++){
+			jajo = new JsonObject();
+			jajo.addProperty("bookname", "name"+i);
+			jajo.addProperty("author", "author"+i);			
+			subjectja.add(jajo);			
+		}
 								
 		jo.add("data", subjectja);
 				
 		//print Json String
 		System.out.println(jo.toString());
+		
+		
+		/*
+		{
+			"status":"true",
+			"date":"2014-09-25",
+			"data":[
+				{"bookname":"name1","author":"author1"},
+				{"bookname":"name1","author":"author2"},
+				{"bookname":"name1","author":"author3"},
+				{"bookname":"name1","author":"author4"}
+			]
+		}
+		*/
+		
 		
 	}
 
