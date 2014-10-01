@@ -34,6 +34,18 @@ public class ParseJson {
 		//print Json String
 		System.out.println(jo.toString());
 		
+		/*
+		{
+			"status":"true",
+			"date":"2014-09-28",
+			"data":{
+				"bookname":"Harry Potter",
+				"author":"J. K. Rowling"
+			}
+		}
+		*/
+
+		
 		//Parse Json formate use BookJson object by fromJson function
 		BookJson book = (BookJson)gson.fromJson(jo.toString(), BookJson.class);
 		
