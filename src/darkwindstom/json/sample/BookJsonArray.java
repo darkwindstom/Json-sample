@@ -54,7 +54,6 @@ public class BookJsonArray {
 			this.bookname = bookname;
 			this.author = author;
 		}
-		
 		public String getPurchase_ID() {
 			return Purchase_ID;
 		}

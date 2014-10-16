@@ -19,7 +19,8 @@ public class ParseJsonArray {
 		//print Json formate data
 		System.out.println(gson.toJson(book).toString());
 
-
+		
+		//add array
 		ArrayList<Result> abc = new ArrayList<Result>();
 
 		Result tmp1 = new Result("a", "b", "c", "d");			
