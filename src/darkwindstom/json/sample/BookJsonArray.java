@@ -48,6 +48,13 @@ public class BookJsonArray {
 		public String bookname;
 		public String author;
 				
+		public Result(String Purchase_ID, String Price, String bookname, String author){
+			this.Purchase_ID = Purchase_ID;
+			this.Price = Price;
+			this.bookname = bookname;
+			this.author = author;
+		}
+
 		public String getPurchase_ID() {
 			return Purchase_ID;
 		}
